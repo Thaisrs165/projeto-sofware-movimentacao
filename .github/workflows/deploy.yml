@@ -46,4 +46,4 @@ jobs:
           script: |
             docker stop movimentacoes
             docker rm --force movimentacoes
-            docker run -d -p 8080:8080 --name movimentacoes thaisrs3/movimentacoes-ci:${{ github.sha }} 
+            docker run -d -p 5000:5000 --name movimentacoes thaisrs3/movimentacoes-ci:${{ github.sha }} 
